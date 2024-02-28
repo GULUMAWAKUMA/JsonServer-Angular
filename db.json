@@ -1,0 +1,61 @@
+{
+  "user": [
+    {
+      "id": "rtyhyjuk",
+      "name": "ertyui",
+      "password": "1114257",
+      "email": "a@gmail.com",
+      "gender": "male",
+      "role": "staff",
+      "isactive": true
+    },
+    {
+      "id": "naola",
+      "name": "Naol",
+      "password": "11111",
+      "email": "a@gmail.com",
+      "gender": "male",
+      "role": "quality",
+      "isactive": true
+    },
+    {
+      "id": "gutawad",
+      "name": "Gutadd",
+      "password": "11132dd455",
+      "email": "g@gmddail.com",
+      "gender": "male",
+      "role": "quality",
+      "isactive": true
+    },
+    {
+      "id": "gutaw",
+      "name": "Guta",
+      "password": "11132455",
+      "email": "g@gmail.com",
+      "gender": "male",
+      "role": "admin",
+      "isactive": true
+    },
+    {
+      "id": "Wakoo",
+      "name": "Wako",
+      "password": "11132455",
+      "email": "w@gmail.com",
+      "gender": "male",
+      "role": "",
+      "isactive": false
+    }
+  ],
+  "role": [
+    {
+      "code": "staff",
+      "name": "Staff",
+      "id": "0f11"
+    },
+    {
+      "code": "quality",
+      "name": "Quality",
+      "id": "e641"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+
+<p *ngIf="ismenurequired">
+   <mat-toolbar color="primary">
+     <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+       <mat-icon>menu</mat-icon>
+     </button>
+     <span>My App</span>
+  <a routerLink=""><button mat-icon-button color="primary" aria-label="Example icon button with a home icon" style="color:aliceblue">
+            <mat-icon>home</mat-icon>
+          </button></a>
+          
+          <a *ngIf="isadminuser" routerLink="/user" style="color: white; margin-top: 10px;">
+            <mat-icon>account_circle</mat-icon>
+          </a>
+<!-- 
+     <button mat-fab color="warn" aria-label="Example icon button with a home icon">
+      <mat-icon>home</mat-icon>
+    </button> -->
+     <!-- <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+       <mat-icon>favorite</mat-icon>
+     </button> -->
+     <div><a routerLink="/login">
+    <mat-icon style="color: red; position: absolute; right: 10px; top: 20px;">exit_to_app</mat-icon>
+  </a></div>
+   
+   </mat-toolbar>
+  
+ </p>
+<div class="container"><router-outlet></router-outlet></div>
+

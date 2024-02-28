@@ -1,0 +1,35 @@
+
+<mat-card class="registration" >
+   <div class="form">
+    <mat-card-header>
+       <h1>Update User</h1>
+    </mat-card-header>
+    <mat-card-content>
+       <form class="example-form" [formGroup]="registerForm" (ngSubmit)="updateuser()">
+       
+
+  
+    <mat-form-field class="example-full-width" style="width: 300px;">
+      <mat-label>Role</mat-label>
+      <mat-select matInput formControlName="role">
+         <!-- @for (food of foods; track food) {
+           <mat-option [value]="food.value">{{food.viewValue}}</mat-option>
+         } -->
+            <mat-option value="">Select Role</mat-option>
+            <mat-option *ngFor="let item of rolelist " [value]="item.code">{{item.name}}</mat-option>
+       </mat-select>
+    </mat-form-field>
+       <div>
+         <mat-checkbox formControlName="isactive" class="example-margin">Is Active</mat-checkbox>
+       </div>
+    <div>
+    <button mat-raised-button color="primary" value="Submit">Update</button>
+    <a mat-dialog-close mat-raised-button color="accent">Close</a>
+   </div>
+  </form>
+    </mat-card-content>
+   </div>
+  </mat-card>
+ 
+  
+ 
